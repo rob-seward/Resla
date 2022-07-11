@@ -27,7 +27,10 @@ export function Header() {
     <div className={container}>
       <header className={header}>
         <Link to="/" className={logoCss}>
-          <Logo />
+          
+          <img className="h-8 w-auto sm:h-10"
+                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                      alt="" />
         </Link>
         <Navigation className={nav} />
         <Link to="/search" className={searchButton}>

@@ -7,12 +7,18 @@ export function Navigation({ className }) {
   const {
     allShopifyProduct: { productTypes },
   } = useStaticQuery(graphql`
+
+
     query {
       allShopifyProduct {
         productTypes: distinct(field: productType)
       }
     }
   `)
+
+  
+
+  
 
   return (
     <nav className={[navStyle, className].join(" ")}>

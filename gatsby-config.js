@@ -16,6 +16,14 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-source-contentful`,
+      options: {
+          spaceId: process.env.CONTENTFUL_SPACE_ID,
+          accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+          host: process.env.CONTENTFUL_HOST,
+      },
+  },
+    {
       resolve: "gatsby-source-shopify",
       options: {
         password: process.env.SHOPIFY_SHOP_PASSWORD,
@@ -23,12 +31,14 @@ module.exports = {
         shopifyConnections: ["collections"],
       },
     },
+    'gatsby-plugin-postcss',
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-gatsby-cloud",
+    "gatsby-plugin-no-index",
     // Add your Google Analytics ID to the .env file to enable
     // Otherwise, this plugin can be removed
     process.env.GOOGLE_ANALYTICS_ID && {
