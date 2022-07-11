@@ -10,13 +10,15 @@ import {
   footerNavListItem,
 } from "./footer.module.css"
 
+import { Link } from 'gatsby';
+
 export function Footer() {
   const navigation = {
     solutions: [
-      { name: 'Marketing', href: '#' },
-      { name: 'Analytics', href: '#' },
-      { name: 'Commerce', href: '#' },
-      { name: 'Insights', href: '#' },
+      { name: 'Products', href: '/products' },
+      { name: 'Battery', href: '/battery' },
+      { name: 'Commerce', href: '/semi-conductor' },
+      { name: 'Insights', href: '/electric-motor' },
     ],
     support: [
       { name: 'Pricing', href: '#' },
@@ -132,9 +134,9 @@ export function Footer() {
               <ul role="list" className="mt-4 space-y-4">
                 {navigation.solutions.map((item) => (
                   <li key={item.name}>
-                    <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                    <Link to={item.href} className="text-base text-gray-500 hover:text-gray-900">
                       {item.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

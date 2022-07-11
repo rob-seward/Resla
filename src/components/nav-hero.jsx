@@ -3,6 +3,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Link } from 'gatsby';
 
 
 
@@ -14,10 +15,10 @@ export default function NavHero({subHeading, heading, rightSideImage, navBattery
         const image = getImage(rightSideImage);
 
         const navigation = [
-          { name: 'Product', href: `products` },
-          { name: 'Battery', href: `battery` },
-          { name: 'Semi-conductor', href: `semi-conductor` },
-          { name: 'Electric motor', href: `electric-motor` },
+          { name: 'Product', href: `/products` },
+          { name: 'Battery', href: `/battery` },
+          { name: 'Semi-conductor', href: `/semi-conductor` },
+          { name: 'Electric motor', href: `/electric-motor` },
         ]
        
     return (
@@ -121,13 +122,13 @@ export default function NavHero({subHeading, heading, rightSideImage, navBattery
                   </div>
                   <div className="px-2 pt-2 pb-3 space-y-1">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
                         className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                   <a
