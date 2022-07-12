@@ -11,7 +11,7 @@ import {
 } from "./footer.module.css"
 
 import { Link } from "gatsby";
-import meta from '../images/meta.png'
+
 
 export function Footer() {
   const navigation = {
@@ -113,7 +113,7 @@ export function Footer() {
         <div className="space-y-8 xl:col-span-1">
           <img
             className="h-10"
-            src={meta}
+            src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
             alt="Company name"
           />
           <p className="text-gray-500 text-base">

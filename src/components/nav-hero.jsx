@@ -4,7 +4,7 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { Link } from 'gatsby';
-import meta from '../images/meta.png'
+
 
 
 
@@ -61,7 +61,7 @@ export default function NavHero({subHeading, heading, rightSideImage, navBattery
                     <span className="sr-only">Workflow</span>
                     <img
                       className="h-10 w-auto sm:h-10"
-                      src={meta}
+                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                       alt=""
                     />
                   </a>
