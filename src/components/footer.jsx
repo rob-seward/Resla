@@ -10,12 +10,13 @@ import {
   footerNavListItem,
 } from "./footer.module.css"
 
-import { Link } from 'gatsby';
+import { Link } from "gatsby";
+import meta from '../images/meta.png'
 
 export function Footer() {
   const navigation = {
     solutions: [
-      { name: 'Products', href: 'products' },
+      { name: 'Products', href: '/products' },
       { name: 'Battery', href: '/battery' },
       { name: 'Semi-conductor', href: '/semi-conductor' },
       { name: 'Electric motor', href: '/electric-motor' },
@@ -112,7 +113,7 @@ export function Footer() {
         <div className="space-y-8 xl:col-span-1">
           <img
             className="h-10"
-            src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
+            src={meta}
             alt="Company name"
           />
           <p className="text-gray-500 text-base">

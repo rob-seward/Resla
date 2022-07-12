@@ -6,6 +6,7 @@ import { Navigation } from "./navigation"
 import { CartButton } from "./cart-button"
 import SearchIcon from "../icons/search"
 import { Toast } from "./toast"
+import meta from '../images/meta.png'
 import {
   header,
   container,
@@ -29,7 +30,7 @@ export function Header() {
         <Link to="/" className={logoCss}>
           
           <img className="h-8 w-auto sm:h-10"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                      src={meta}
                       alt="" />
         </Link>
         <Navigation className={nav} />
