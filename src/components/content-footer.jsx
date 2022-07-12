@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronDownIcon } from '@heroicons/react/solid'
+import { Link } from 'gatsby';
 
 
 
@@ -107,9 +108,9 @@ export default function ContentFooter({navBattery,navSemi, navMotor, navProducts
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-300 hover:text-white">
+                      <Link to={item.href} className="text-base text-gray-300 hover:text-white">
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

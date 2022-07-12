@@ -27,8 +27,8 @@ export function ProductCard({ product, eager }) {
     priceRangeV2.minVariantPrice.amount
   )
 
-  const defaultImageHeight = 200
-  const defaultImageWidth = 200
+  const defaultImageHeight = 150
+  const defaultImageWidth = 150
   let storefrontImageData = {}
   if (storefrontImages) {
     const storefrontImage = storefrontImages.edges[0].node

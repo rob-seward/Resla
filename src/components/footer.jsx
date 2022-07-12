@@ -15,10 +15,10 @@ import { Link } from 'gatsby';
 export function Footer() {
   const navigation = {
     solutions: [
-      { name: 'Products', href: '/products' },
+      { name: 'Products', href: 'products' },
       { name: 'Battery', href: '/battery' },
-      { name: 'Commerce', href: '/semi-conductor' },
-      { name: 'Insights', href: '/electric-motor' },
+      { name: 'Semi-conductor', href: '/semi-conductor' },
+      { name: 'Electric motor', href: '/electric-motor' },
     ],
     support: [
       { name: 'Pricing', href: '#' },
